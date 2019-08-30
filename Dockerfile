@@ -7,5 +7,7 @@ RUN aPK add vim
 RUN apk add curl
 RUN apk add wget
 
-EXPOSE 80
+ENTRYPOINT ["/bin/bash"]
+ExPOSE 80
+
 CMD [echo "succsesfully"] 
