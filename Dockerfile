@@ -1,4 +1,4 @@
-FROM mnginx
+FROM nginx
 
 MAINTAINER maniengg <manibabu.engg@gmail.com>
 
