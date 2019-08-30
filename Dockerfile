@@ -5,4 +5,4 @@ WORKDIR app
 
 RUN pwd
 
-ENTRYPOINT ["node"]
+CMD [echo "excuted"]
