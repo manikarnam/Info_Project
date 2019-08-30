@@ -1,10 +1,12 @@
-FROM nginx
+FROM node:8.11-slim
 
-MAINTAINER maniengg <manibabu.engg@gmail.com>
+ENV workdirectory /usr/node
 
-#RUN apk add update
-RUN apk add vim 
-ExPOSE 80
-ENTRYPOINT ["/bin/bash"]
+WORKDIR $workdirectory
+WORKDIR app
 
-CMD [echo "succsesfully"] 
+COPY package.json .
+
+RUN ls -l
+
+ENTRYPOINT ["node"]
